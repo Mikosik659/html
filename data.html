@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8" />
+    <title>DATA I GODZINA</title>
+    
+    <script type="text/javascript">
+    function time()
+        {
+    var today = new Date();
+        
+    var day = today.getDate();
+    var month = today.getMonth()+1;
+    var year = today.getFullYear();
+        
+    var hour = today.getHours();
+    var minute = today.getUTCMinutes();
+    var second = today.getSeconds();
+         document.getElementById("data").innerHTML = 
+         day+"/"+month"/"+year"|"+hour":"+minute":"+second;
+         
+        setTimeout("time"),1000);
+        }
+    </script>
+</head>
+    
+<body>
+    
+    <div id="data"></div>
+    <script type="text/javascript">
+      document.getElementById("data").innerHTML = day+"/"+month"/"+year"|"+hour":"+minute":"+second;
+    </script>
+    
+</body>
+    
+</html>
